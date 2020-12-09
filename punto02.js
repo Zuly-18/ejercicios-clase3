@@ -25,10 +25,12 @@ console.log('2-B) Para alambrar el terreno se necesita: ' +cant+' metros de alam
 
 console.log('*************************************************************')
 console.log('Inicio del punto 2-C')
-var metros = parseFloat(prompt('Ingrese los metros cuadrados de contrapiso'))
-var cantCemento = metros * 2
-var cantCal = metros * 3
+var largo1 = parseFloat(prompt('Ingrese los metros de largo del contrapiso'))
+var ancho1 = parseFloat(prompt('Ingrese los metros de ancho del contrapiso'))
+var superficie = largo1 * ancho1
+var cantCemento = superficie * 2
+var cantCal = superficie * 3
 
 alert('Se necesitan '+cantCemento+ ' bolsas de cemento y '+cantCal+' bolsas de Cal')
-console.log('Los metros cuadrados son de: ' + metros)
+console.log('Los metros cuadrados del contrapiso son de: ' + superficie + 'm^2')
 console.log('2-C) Se necesitan '+cantCemento+ ' bolsas de cemento y '+cantCal+' bolsas de Cal' )
